@@ -1,6 +1,8 @@
 #ignore your json results file
 data.json
 
+#stdout file
+stdout.txt
 
 #env file
 .env
