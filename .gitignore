@@ -4,6 +4,8 @@ data.json
 #stdout file
 stdout.txt
 
+#test
+
 #env file
 .env
 
