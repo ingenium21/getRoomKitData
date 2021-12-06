@@ -1,3 +1,10 @@
+#ignore your json results file
+data.json
+
+
+#env file
+.env
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
