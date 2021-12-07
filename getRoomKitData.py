@@ -57,13 +57,20 @@ def session_close(ssh):
     ssh.close()
 
 def main():
+    #trying xstatus first
     device = "swiney lab"
     command = "xstatus\r"
     session = start_connect()
     data = send_command(session, command)
     mydict = data_to_dict(data)
     dict_to_json(mydict, command, device)
-    session_close()
+
+    #trying call history
+    command1 = "xcommand CallHistory Get Limit: 1 DetailLevel: full\r"
+    data1 = send_command(session, command1)
+    mydict1 = data_to_dict(data1)
+    dict_to_json(mydict1, command1, device)
+    session_close(session)
 
 if __name__ == "__main__":
     main()
