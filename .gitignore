@@ -1,10 +1,8 @@
 #ignore your json results file
-data.json
+*.json
 
 #stdout file
 stdout.txt
-
-#test
 
 #env file
 .env
