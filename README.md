@@ -9,4 +9,4 @@ then install the requirements by (having python) and typing pip install -r ./req
 then run that bad boy.
 
 # things I need to do
-~~change data_to_dict, right now it's only just grabbing a file
+~~change data_to_dict, right now it's only just grabbing a file~~
