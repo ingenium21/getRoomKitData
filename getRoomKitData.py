@@ -12,7 +12,7 @@ def start_connect():
     """Connects to the host via ssh and outputs a channel object"""
     host = os.getenv("HOST")
     port = os.getenv("PORT")
-    username = os.getenv("USERNAME")
+    username = 'admin'
     password = os.getenv("PASSWORD")
     ssh = paramiko.SSHClient()
     ssh.set_missing_host_key_policy(paramiko.AutoAddPolicy())
@@ -45,13 +45,15 @@ def data_to_dict(data, pattern='*s '):
 
 def dict_to_json(myDict, command, device):
     """spits out dict into a json file"""
-    filename = f"/{device}_{command}_output.json"
+    device = device.replace(' ', '_')
+    command = command.replace(' ', '_')
+    filename = f"/{device}_{command[:-1]}_output.json"
     filepath = os.getenv("JSON_PATH")
     if os.path.exists(filepath) == False:
         os.mkdir(filepath)
     filename = f"{filepath}{filename}"
-    with open(filepath, 'w') as fp:
-        json.dump(myDict, fp)
+    with open(filename, 'w') as fp:
+        json.dump(myDict, fp, indent=2)
 
 def session_close(ssh):
     ssh.close()
@@ -67,9 +69,10 @@ def main():
 
     #trying call history
     command1 = "xcommand CallHistory Get Limit: 1 DetailLevel: full\r"
+    command1Trimmed = "callHistory"
     data1 = send_command(session, command1)
-    mydict1 = data_to_dict(data1)
-    dict_to_json(mydict1, command1, device)
+    mydict1 = data_to_dict(data1, pattern='*r ')
+    dict_to_json(mydict1, command1Trimmed, device)
     session_close(session)
 
 if __name__ == "__main__":
