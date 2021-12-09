@@ -30,7 +30,7 @@ def send_command(ssh, command = "xstatus\r"):
     return string
 
 
-def data_to_dict(data, pattern='*s '):
+def data_to_dict(data="", pattern='*s ', filterPattern = ""):
     """converts the data you give it into a dictionary"""
     data = data.split(pattern)
     if pattern not in data[0]:
@@ -39,41 +39,77 @@ def data_to_dict(data, pattern='*s '):
     my_dict = {}
     for item in data:
         key, val = item.split(":", 1)
-        my_dict[key] = val
+        if "(status=OK)" in key:
+            continue #does some further trimming if you need it.
+        key = re.sub(filterPattern, '', key)
+        my_dict[key] = val.strip()
     return my_dict
 
-
-def dict_to_json(myDict, command, device):
+def dict_to_json(myDict, command):
     """spits out dict into a json file"""
-    device = device.replace(' ', '_')
+    device = os.getenv("DEVICE")
     command = command.replace(' ', '_')
-    filename = f"/{device}_{command[:-1]}_output.json"
+    if command[-1] == "\r":
+        del command[-1]
+    filename = f"/{device}_{command}_output.json"
     filepath = os.getenv("JSON_PATH")
     if os.path.exists(filepath) == False:
         os.mkdir(filepath)
     filename = f"{filepath}{filename}"
-    with open(filename, 'w') as fp:
-        json.dump(myDict, fp, indent=2)
+    if os.path.exists(filename):
+        with open(filename, 'rb+') as fp:
+            fp.seek(-3, os.SEEK_END)
+            fp.truncate()
+        with open(filename, 'a', encoding='utf-8') as fp:
+            fp.write(',\n')
+            json.dump(myDict, fp)
+            fp.write('\n]')
+    else:
+        with open(filename, 'a', encoding='utf-8') as fp:
+            fp.write('[')
+            json.dump(myDict, fp)
+            fp.write('\n]')
 
 def session_close(ssh):
     ssh.close()
 
-def main():
-    #trying xstatus first
-    device = "swiney lab"
-    command = "xstatus\r"
-    session = start_connect()
-    data = send_command(session, command)
-    mydict = data_to_dict(data)
-    dict_to_json(mydict, command, device)
+def compare_callHistory_Ids(mydict):
+    jsonFileName = "./local.json"
+    if os.path.exists(jsonFileName):
+        with open(jsonFileName, 'r') as j:
+            callHistory = json.loads(j.read())
+            j.close()
+        if mydict[' CallId'] > callHistory[' CallId']:
+            mydict = {' CallId' : mydict[' CallId']}
+            with open(jsonFileName, 'w') as jn:
+                json.dump(mydict, jn)
+                jn.close()
+            return True
+        else:
+            return False
+    else:
+        with open(jsonFileName, 'w') as jn:
+                    json.dump(mydict, jn)
+                    jn.close()
+        return True
 
-    #trying call history
-    command1 = "xcommand CallHistory Get Limit: 1 DetailLevel: full\r"
-    command1Trimmed = "callHistory"
-    data1 = send_command(session, command1)
-    mydict1 = data_to_dict(data1, pattern='*r ')
-    dict_to_json(mydict1, command1Trimmed, device)
-    session_close(session)
+def get_call_history(session):
+    command = "xcommand CallHistory Get DetailLevel: full\r"
+    commandTrimmed = "callHistory"
+    data = send_command(session, command)
+    callsArray = re.split("\*r CallHistoryGetResult Entry \d CallHistoryId: \d+", data)
+    callsArray.pop(0)
+    for call in reversed(callsArray):
+        mydict = data_to_dict(call, pattern="*r ", filterPattern="(.*?Entry \d)")
+        cmp = compare_callHistory_Ids(mydict)
+        if (cmp):
+            dict_to_json(mydict, commandTrimmed)
+
+def main():
+    device = os.getenv("DEVICE")
+    session = start_connect()
+    get_call_history(session)
+
 
 if __name__ == "__main__":
     main()
