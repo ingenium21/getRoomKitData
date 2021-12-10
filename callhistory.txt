@@ -1,0 +1,411 @@
+
+*r CallHistoryGetResult (status=OK):
+*r CallHistoryGetResult Entry 0 CallHistoryId: 11
+*r CallHistoryGetResult Entry 0 CallId: 4
+*r CallHistoryGetResult Entry 0 RemoteNumber: "sip:george.swiney@vtc.ironbow.com"
+*r CallHistoryGetResult Entry 0 CallbackNumber: "sip:george.swiney@vtc.ironbow.com"
+*r CallHistoryGetResult Entry 0 DisplayName: "george.swiney@vtc.ironbow.com"
+*r CallHistoryGetResult Entry 0 Direction: Incoming
+*r CallHistoryGetResult Entry 0 Protocol: Sip
+*r CallHistoryGetResult Entry 0 CallRate: 4096
+*r CallHistoryGetResult Entry 0 CallType: Video
+*r CallHistoryGetResult Entry 0 VideoUsed: True
+*r CallHistoryGetResult Entry 0 EncryptionType: "AES-128"
+*r CallHistoryGetResult Entry 0 BookingId: ""
+*r CallHistoryGetResult Entry 0 Duration: 5
+*r CallHistoryGetResult Entry 0 StartTime: "2021-12-10T14:59:17"
+*r CallHistoryGetResult Entry 0 StartTimeUTC: "2021-12-10T19:59:17Z"
+*r CallHistoryGetResult Entry 0 EndTime: "2021-12-10T14:59:22"
+*r CallHistoryGetResult Entry 0 EndTimeUTC: "2021-12-10T19:59:22Z"
+*r CallHistoryGetResult Entry 0 DaysAgo: 0
+*r CallHistoryGetResult Entry 0 DisconnectCause: ""
+*r CallHistoryGetResult Entry 0 DisconnectCauseCode: 0
+*r CallHistoryGetResult Entry 0 DisconnectCauseOrigin: Internal
+*r CallHistoryGetResult Entry 0 DisconnectCauseType: LocalDisconnect
+*r CallHistoryGetResult Entry 0 Video Incoming PacketLoss: "1/189"
+*r CallHistoryGetResult Entry 0 Video Incoming PacketLossPercent: 1
+*r CallHistoryGetResult Entry 0 Video Incoming MaxJitter: 25
+*r CallHistoryGetResult Entry 0 Video Outgoing PacketLoss: "0/344"
+*r CallHistoryGetResult Entry 0 Video Outgoing PacketLossPercent: 0
+*r CallHistoryGetResult Entry 0 Video Outgoing MaxJitter: 5
+*r CallHistoryGetResult Entry 0 Audio Incoming PacketLoss: "1/134"
+*r CallHistoryGetResult Entry 0 Audio Incoming PacketLossPercent: 1
+*r CallHistoryGetResult Entry 0 Audio Incoming MaxJitter: 64
+*r CallHistoryGetResult Entry 0 Audio Outgoing PacketLoss: "0/165"
+*r CallHistoryGetResult Entry 0 Audio Outgoing PacketLossPercent: 0
+*r CallHistoryGetResult Entry 0 Audio Outgoing MaxJitter: 1
+*r CallHistoryGetResult Entry 0 OccurrenceType: Received
+*r CallHistoryGetResult Entry 0 IsAcknowledged: Acknowledged
+*r CallHistoryGetResult Entry 0 RoomAnalytics PeopleCount: "0"
+*r CallHistoryGetResult Entry 1 CallHistoryId: 10
+*r CallHistoryGetResult Entry 1 CallId: 3
+*r CallHistoryGetResult Entry 1 RemoteNumber: "sip:george.swiney@vtc.ironbow.com"
+*r CallHistoryGetResult Entry 1 CallbackNumber: "sip:george.swiney@vtc.ironbow.com"
+*r CallHistoryGetResult Entry 1 DisplayName: "george.swiney@vtc.ironbow.com"
+*r CallHistoryGetResult Entry 1 Direction: Incoming
+*r CallHistoryGetResult Entry 1 Protocol: Sip
+*r CallHistoryGetResult Entry 1 CallRate: 4096
+*r CallHistoryGetResult Entry 1 CallType: Video
+*r CallHistoryGetResult Entry 1 VideoUsed: True
+*r CallHistoryGetResult Entry 1 EncryptionType: "AES-128"
+*r CallHistoryGetResult Entry 1 BookingId: ""
+*r CallHistoryGetResult Entry 1 Duration: 211
+*r CallHistoryGetResult Entry 1 StartTime: "2021-12-07T17:00:27"
+*r CallHistoryGetResult Entry 1 StartTimeUTC: "2021-12-07T22:00:27Z"
+*r CallHistoryGetResult Entry 1 EndTime: "2021-12-07T17:03:58"
+*r CallHistoryGetResult Entry 1 EndTimeUTC: "2021-12-07T22:03:58Z"
+*r CallHistoryGetResult Entry 1 DaysAgo: 2
+*r CallHistoryGetResult Entry 1 DisconnectCause: ""
+*r CallHistoryGetResult Entry 1 DisconnectCauseCode: 0
+*r CallHistoryGetResult Entry 1 DisconnectCauseOrigin: Internal
+*r CallHistoryGetResult Entry 1 DisconnectCauseType: LocalDisconnect
+*r CallHistoryGetResult Entry 1 Video Incoming PacketLoss: "36/18424"
+*r CallHistoryGetResult Entry 1 Video Incoming PacketLossPercent: 0
+*r CallHistoryGetResult Entry 1 Video Incoming MaxJitter: 28
+*r CallHistoryGetResult Entry 1 Video Outgoing PacketLoss: "4/23700"
+*r CallHistoryGetResult Entry 1 Video Outgoing PacketLossPercent: 0
+*r CallHistoryGetResult Entry 1 Video Outgoing MaxJitter: 9
+*r CallHistoryGetResult Entry 1 Audio Incoming PacketLoss: "19/10348"
+*r CallHistoryGetResult Entry 1 Audio Incoming PacketLossPercent: 0
+*r CallHistoryGetResult Entry 1 Audio Incoming MaxJitter: 63
+*r CallHistoryGetResult Entry 1 Audio Outgoing PacketLoss: "5/10400"
+*r CallHistoryGetResult Entry 1 Audio Outgoing PacketLossPercent: 0
+*r CallHistoryGetResult Entry 1 Audio Outgoing MaxJitter: 8
+*r CallHistoryGetResult Entry 1 OccurrenceType: Received
+*r CallHistoryGetResult Entry 1 IsAcknowledged: Acknowledged
+*r CallHistoryGetResult Entry 1 RoomAnalytics PeopleCount: "0"
+*r CallHistoryGetResult Entry 2 CallHistoryId: 9
+*r CallHistoryGetResult Entry 2 CallId: 2
+*r CallHistoryGetResult Entry 2 RemoteNumber: "sip:george.swiney@vtc.ironbow.com"
+*r CallHistoryGetResult Entry 2 CallbackNumber: "sip:george.swiney@vtc.ironbow.com"
+*r CallHistoryGetResult Entry 2 DisplayName: "george.swiney@vtc.ironbow.com"
+*r CallHistoryGetResult Entry 2 Direction: Incoming
+*r CallHistoryGetResult Entry 2 Protocol: Sip
+*r CallHistoryGetResult Entry 2 CallRate: 4096
+*r CallHistoryGetResult Entry 2 CallType: Video
+*r CallHistoryGetResult Entry 2 VideoUsed: True
+*r CallHistoryGetResult Entry 2 EncryptionType: "AES-128"
+*r CallHistoryGetResult Entry 2 BookingId: ""
+*r CallHistoryGetResult Entry 2 Duration: 3775
+*r CallHistoryGetResult Entry 2 StartTime: "2021-12-07T11:14:15"
+*r CallHistoryGetResult Entry 2 StartTimeUTC: "2021-12-07T16:14:15Z"
+*r CallHistoryGetResult Entry 2 EndTime: "2021-12-07T12:17:10"
+*r CallHistoryGetResult Entry 2 EndTimeUTC: "2021-12-07T17:17:10Z"
+*r CallHistoryGetResult Entry 2 DaysAgo: 3
+*r CallHistoryGetResult Entry 2 DisconnectCause: "Normal"
+*r CallHistoryGetResult Entry 2 DisconnectCauseCode: 0
+*r CallHistoryGetResult Entry 2 DisconnectCauseOrigin: SIP
+*r CallHistoryGetResult Entry 2 DisconnectCauseType: RemoteDisconnect
+*r CallHistoryGetResult Entry 2 Video Incoming PacketLoss: "314/326580"
+*r CallHistoryGetResult Entry 2 Video Incoming PacketLossPercent: 0
+*r CallHistoryGetResult Entry 2 Video Incoming MaxJitter: 170
+*r CallHistoryGetResult Entry 2 Video Outgoing PacketLoss: "2/344551"
+*r CallHistoryGetResult Entry 2 Video Outgoing PacketLossPercent: 0
+*r CallHistoryGetResult Entry 2 Video Outgoing MaxJitter: 31
+*r CallHistoryGetResult Entry 2 Audio Incoming PacketLoss: "142/180604"
+*r CallHistoryGetResult Entry 2 Audio Incoming PacketLossPercent: 0
+*r CallHistoryGetResult Entry 2 Audio Incoming MaxJitter: 88
+*r CallHistoryGetResult Entry 2 Audio Outgoing PacketLoss: "1/180698"
+*r CallHistoryGetResult Entry 2 Audio Outgoing PacketLossPercent: 0
+*r CallHistoryGetResult Entry 2 Audio Outgoing MaxJitter: 61
+*r CallHistoryGetResult Entry 2 OccurrenceType: Received
+*r CallHistoryGetResult Entry 2 IsAcknowledged: Acknowledged
+*r CallHistoryGetResult Entry 2 RoomAnalytics PeopleCount: "0"
+*r CallHistoryGetResult Entry 3 CallHistoryId: 8
+*r CallHistoryGetResult Entry 3 CallId: 9
+*r CallHistoryGetResult Entry 3 RemoteNumber: "sip:george.swiney@vtc.ironbow.com"
+*r CallHistoryGetResult Entry 3 CallbackNumber: "sip:george.swiney@vtc.ironbow.com"
+*r CallHistoryGetResult Entry 3 DisplayName: "george.swiney@vtc.ironbow.com"
+*r CallHistoryGetResult Entry 3 Direction: Incoming
+*r CallHistoryGetResult Entry 3 Protocol: Sip
+*r CallHistoryGetResult Entry 3 CallRate: 4096
+*r CallHistoryGetResult Entry 3 CallType: Video
+*r CallHistoryGetResult Entry 3 VideoUsed: True
+*r CallHistoryGetResult Entry 3 EncryptionType: "AES-128"
+*r CallHistoryGetResult Entry 3 BookingId: ""
+*r CallHistoryGetResult Entry 3 Duration: 17
+*r CallHistoryGetResult Entry 3 StartTime: "2021-12-03T16:18:16"
+*r CallHistoryGetResult Entry 3 StartTimeUTC: "2021-12-03T21:18:16Z"
+*r CallHistoryGetResult Entry 3 EndTime: "2021-12-03T16:18:33"
+*r CallHistoryGetResult Entry 3 EndTimeUTC: "2021-12-03T21:18:33Z"
+*r CallHistoryGetResult Entry 3 DaysAgo: 6
+*r CallHistoryGetResult Entry 3 DisconnectCause: ""
+*r CallHistoryGetResult Entry 3 DisconnectCauseCode: 0
+*r CallHistoryGetResult Entry 3 DisconnectCauseOrigin: Internal
+*r CallHistoryGetResult Entry 3 DisconnectCauseType: LocalDisconnect
+*r CallHistoryGetResult Entry 3 Video Incoming PacketLoss: "0/1179"
+*r CallHistoryGetResult Entry 3 Video Incoming PacketLossPercent: 0
+*r CallHistoryGetResult Entry 3 Video Incoming MaxJitter: 31
+*r CallHistoryGetResult Entry 3 Video Outgoing PacketLoss: "0/1774"
+*r CallHistoryGetResult Entry 3 Video Outgoing PacketLossPercent: 0
+*r CallHistoryGetResult Entry 3 Video Outgoing MaxJitter: 7
+*r CallHistoryGetResult Entry 3 Audio Incoming PacketLoss: "0/683"
+*r CallHistoryGetResult Entry 3 Audio Incoming PacketLossPercent: 0
+*r CallHistoryGetResult Entry 3 Audio Incoming MaxJitter: 17
+*r CallHistoryGetResult Entry 3 Audio Outgoing PacketLoss: "0/789"
+*r CallHistoryGetResult Entry 3 Audio Outgoing PacketLossPercent: 0
+*r CallHistoryGetResult Entry 3 Audio Outgoing MaxJitter: 7
+*r CallHistoryGetResult Entry 3 OccurrenceType: Received
+*r CallHistoryGetResult Entry 3 IsAcknowledged: Acknowledged
+*r CallHistoryGetResult Entry 3 RoomAnalytics PeopleCount: "0"
+*r CallHistoryGetResult Entry 4 CallHistoryId: 7
+*r CallHistoryGetResult Entry 4 CallId: 8
+*r CallHistoryGetResult Entry 4 RemoteNumber: "sip:george.swiney@vtc.ironbow.com"
+*r CallHistoryGetResult Entry 4 CallbackNumber: "sip:george.swiney@vtc.ironbow.com"
+*r CallHistoryGetResult Entry 4 DisplayName: "george.swiney@vtc.ironbow.com"
+*r CallHistoryGetResult Entry 4 Direction: Incoming
+*r CallHistoryGetResult Entry 4 Protocol: Sip
+*r CallHistoryGetResult Entry 4 CallRate: 4096
+*r CallHistoryGetResult Entry 4 CallType: Video
+*r CallHistoryGetResult Entry 4 VideoUsed: True
+*r CallHistoryGetResult Entry 4 EncryptionType: "AES-128"
+*r CallHistoryGetResult Entry 4 BookingId: ""
+*r CallHistoryGetResult Entry 4 Duration: 25
+*r CallHistoryGetResult Entry 4 StartTime: "2021-12-03T16:04:36"
+*r CallHistoryGetResult Entry 4 StartTimeUTC: "2021-12-03T21:04:36Z"
+*r CallHistoryGetResult Entry 4 EndTime: "2021-12-03T16:05:01"
+*r CallHistoryGetResult Entry 4 EndTimeUTC: "2021-12-03T21:05:01Z"
+*r CallHistoryGetResult Entry 4 DaysAgo: 6
+*r CallHistoryGetResult Entry 4 DisconnectCause: ""
+*r CallHistoryGetResult Entry 4 DisconnectCauseCode: 0
+*r CallHistoryGetResult Entry 4 DisconnectCauseOrigin: Internal
+*r CallHistoryGetResult Entry 4 DisconnectCauseType: LocalDisconnect
+*r CallHistoryGetResult Entry 4 Video Incoming PacketLoss: "24/1492"
+*r CallHistoryGetResult Entry 4 Video Incoming PacketLossPercent: 2
+*r CallHistoryGetResult Entry 4 Video Incoming MaxJitter: 22
+*r CallHistoryGetResult Entry 4 Video Outgoing PacketLoss: "0/2071"
+*r CallHistoryGetResult Entry 4 Video Outgoing PacketLossPercent: 0
+*r CallHistoryGetResult Entry 4 Video Outgoing MaxJitter: 7
+*r CallHistoryGetResult Entry 4 Audio Incoming PacketLoss: "11/905"
+*r CallHistoryGetResult Entry 4 Audio Incoming PacketLossPercent: 1
+*r CallHistoryGetResult Entry 4 Audio Incoming MaxJitter: 61
+*r CallHistoryGetResult Entry 4 Audio Outgoing PacketLoss: "0/953"
+*r CallHistoryGetResult Entry 4 Audio Outgoing PacketLossPercent: 0
+*r CallHistoryGetResult Entry 4 Audio Outgoing MaxJitter: 6
+*r CallHistoryGetResult Entry 4 OccurrenceType: Received
+*r CallHistoryGetResult Entry 4 IsAcknowledged: Acknowledged
+*r CallHistoryGetResult Entry 4 RoomAnalytics PeopleCount: "0"
+*r CallHistoryGetResult Entry 5 CallHistoryId: 6
+*r CallHistoryGetResult Entry 5 CallId: 7
+*r CallHistoryGetResult Entry 5 RemoteNumber: "sip:george.swiney@vtc.ironbow.com"
+*r CallHistoryGetResult Entry 5 CallbackNumber: "sip:george.swiney@vtc.ironbow.com"
+*r CallHistoryGetResult Entry 5 DisplayName: "george.swiney@vtc.ironbow.com"
+*r CallHistoryGetResult Entry 5 Direction: Incoming
+*r CallHistoryGetResult Entry 5 Protocol: Sip
+*r CallHistoryGetResult Entry 5 CallRate: 4096
+*r CallHistoryGetResult Entry 5 CallType: Video
+*r CallHistoryGetResult Entry 5 VideoUsed: True
+*r CallHistoryGetResult Entry 5 EncryptionType: "AES-128"
+*r CallHistoryGetResult Entry 5 BookingId: ""
+*r CallHistoryGetResult Entry 5 Duration: 16
+*r CallHistoryGetResult Entry 5 StartTime: "2021-12-03T16:02:53"
+*r CallHistoryGetResult Entry 5 StartTimeUTC: "2021-12-03T21:02:53Z"
+*r CallHistoryGetResult Entry 5 EndTime: "2021-12-03T16:03:09"
+*r CallHistoryGetResult Entry 5 EndTimeUTC: "2021-12-03T21:03:09Z"
+*r CallHistoryGetResult Entry 5 DaysAgo: 6
+*r CallHistoryGetResult Entry 5 DisconnectCause: ""
+*r CallHistoryGetResult Entry 5 DisconnectCauseCode: 0
+*r CallHistoryGetResult Entry 5 DisconnectCauseOrigin: Internal
+*r CallHistoryGetResult Entry 5 DisconnectCauseType: LocalDisconnect
+*r CallHistoryGetResult Entry 5 Video Incoming PacketLoss: "1/870"
+*r CallHistoryGetResult Entry 5 Video Incoming PacketLossPercent: 0
+*r CallHistoryGetResult Entry 5 Video Incoming MaxJitter: 25
+*r CallHistoryGetResult Entry 5 Video Outgoing PacketLoss: "0/1247"
+*r CallHistoryGetResult Entry 5 Video Outgoing PacketLossPercent: 0
+*r CallHistoryGetResult Entry 5 Video Outgoing MaxJitter: 7
+*r CallHistoryGetResult Entry 5 Audio Incoming PacketLoss: "2/514"
+*r CallHistoryGetResult Entry 5 Audio Incoming PacketLossPercent: 0
+*r CallHistoryGetResult Entry 5 Audio Incoming MaxJitter: 623
+*r CallHistoryGetResult Entry 5 Audio Outgoing PacketLoss: "0/537"
+*r CallHistoryGetResult Entry 5 Audio Outgoing PacketLossPercent: 0
+*r CallHistoryGetResult Entry 5 Audio Outgoing MaxJitter: 8
+*r CallHistoryGetResult Entry 5 OccurrenceType: Received
+*r CallHistoryGetResult Entry 5 IsAcknowledged: Acknowledged
+*r CallHistoryGetResult Entry 5 RoomAnalytics PeopleCount: "0"
+*r CallHistoryGetResult Entry 6 CallHistoryId: 5
+*r CallHistoryGetResult Entry 6 CallId: 6
+*r CallHistoryGetResult Entry 6 RemoteNumber: "sip:george.swiney@vtc.ironbow.com"
+*r CallHistoryGetResult Entry 6 CallbackNumber: "sip:george.swiney@vtc.ironbow.com"
+*r CallHistoryGetResult Entry 6 DisplayName: "george.swiney@vtc.ironbow.com"
+*r CallHistoryGetResult Entry 6 Direction: Incoming
+*r CallHistoryGetResult Entry 6 Protocol: Sip
+*r CallHistoryGetResult Entry 6 CallRate: 4096
+*r CallHistoryGetResult Entry 6 CallType: Video
+*r CallHistoryGetResult Entry 6 VideoUsed: False
+*r CallHistoryGetResult Entry 6 EncryptionType: "None"
+*r CallHistoryGetResult Entry 6 BookingId: ""
+*r CallHistoryGetResult Entry 6 Duration: 0
+*r CallHistoryGetResult Entry 6 StartTime: "2021-12-03T15:44:28"
+*r CallHistoryGetResult Entry 6 StartTimeUTC: "2021-12-03T20:44:28Z"
+*r CallHistoryGetResult Entry 6 EndTime: "2021-12-03T15:44:28"
+*r CallHistoryGetResult Entry 6 EndTimeUTC: "2021-12-03T20:44:28Z"
+*r CallHistoryGetResult Entry 6 DaysAgo: 6
+*r CallHistoryGetResult Entry 6 DisconnectCause: "Request Terminated"
+*r CallHistoryGetResult Entry 6 DisconnectCauseCode: 487
+*r CallHistoryGetResult Entry 6 DisconnectCauseOrigin: SIP
+*r CallHistoryGetResult Entry 6 DisconnectCauseType: RemoteDisconnect
+*r CallHistoryGetResult Entry 6 Video Incoming PacketLoss: "N/A"
+*r CallHistoryGetResult Entry 6 Video Incoming PacketLossPercent: 0
+*r CallHistoryGetResult Entry 6 Video Incoming MaxJitter: 0
+*r CallHistoryGetResult Entry 6 Video Outgoing PacketLoss: "N/A"
+*r CallHistoryGetResult Entry 6 Video Outgoing PacketLossPercent: 0
+*r CallHistoryGetResult Entry 6 Video Outgoing MaxJitter: 0
+*r CallHistoryGetResult Entry 6 Audio Incoming PacketLoss: "N/A"
+*r CallHistoryGetResult Entry 6 Audio Incoming PacketLossPercent: 0
+*r CallHistoryGetResult Entry 6 Audio Incoming MaxJitter: 0
+*r CallHistoryGetResult Entry 6 Audio Outgoing PacketLoss: "N/A"
+*r CallHistoryGetResult Entry 6 Audio Outgoing PacketLossPercent: 0
+*r CallHistoryGetResult Entry 6 Audio Outgoing MaxJitter: 0
+*r CallHistoryGetResult Entry 6 OccurrenceType: Missed
+*r CallHistoryGetResult Entry 6 IsAcknowledged: Unacknowledged
+*r CallHistoryGetResult Entry 6 RoomAnalytics PeopleCount: "N/A"
+*r CallHistoryGetResult Entry 7 CallHistoryId: 4
+*r CallHistoryGetResult Entry 7 CallId: 5
+*r CallHistoryGetResult Entry 7 RemoteNumber: "sip:george.swiney@vtc.ironbow.com"
+*r CallHistoryGetResult Entry 7 CallbackNumber: "sip:george.swiney@vtc.ironbow.com"
+*r CallHistoryGetResult Entry 7 DisplayName: "george.swiney@vtc.ironbow.com"
+*r CallHistoryGetResult Entry 7 Direction: Incoming
+*r CallHistoryGetResult Entry 7 Protocol: Sip
+*r CallHistoryGetResult Entry 7 CallRate: 4096
+*r CallHistoryGetResult Entry 7 CallType: Video
+*r CallHistoryGetResult Entry 7 VideoUsed: True
+*r CallHistoryGetResult Entry 7 EncryptionType: "AES-128"
+*r CallHistoryGetResult Entry 7 BookingId: ""
+*r CallHistoryGetResult Entry 7 Duration: 9
+*r CallHistoryGetResult Entry 7 StartTime: "2021-12-03T15:33:24"
+*r CallHistoryGetResult Entry 7 StartTimeUTC: "2021-12-03T20:33:24Z"
+*r CallHistoryGetResult Entry 7 EndTime: "2021-12-03T15:33:33"
+*r CallHistoryGetResult Entry 7 EndTimeUTC: "2021-12-03T20:33:33Z"
+*r CallHistoryGetResult Entry 7 DaysAgo: 6
+*r CallHistoryGetResult Entry 7 DisconnectCause: ""
+*r CallHistoryGetResult Entry 7 DisconnectCauseCode: 0
+*r CallHistoryGetResult Entry 7 DisconnectCauseOrigin: Internal
+*r CallHistoryGetResult Entry 7 DisconnectCauseType: LocalDisconnect
+*r CallHistoryGetResult Entry 7 Video Incoming PacketLoss: "2/397"
+*r CallHistoryGetResult Entry 7 Video Incoming PacketLossPercent: 1
+*r CallHistoryGetResult Entry 7 Video Incoming MaxJitter: 22
+*r CallHistoryGetResult Entry 7 Video Outgoing PacketLoss: "0/707"
+*r CallHistoryGetResult Entry 7 Video Outgoing PacketLossPercent: 0
+*r CallHistoryGetResult Entry 7 Video Outgoing MaxJitter: 5
+*r CallHistoryGetResult Entry 7 Audio Incoming PacketLoss: "2/244"
+*r CallHistoryGetResult Entry 7 Audio Incoming PacketLossPercent: 1
+*r CallHistoryGetResult Entry 7 Audio Incoming MaxJitter: 60
+*r CallHistoryGetResult Entry 7 Audio Outgoing PacketLoss: "0/328"
+*r CallHistoryGetResult Entry 7 Audio Outgoing PacketLossPercent: 0
+*r CallHistoryGetResult Entry 7 Audio Outgoing MaxJitter: 2
+*r CallHistoryGetResult Entry 7 OccurrenceType: Received
+*r CallHistoryGetResult Entry 7 IsAcknowledged: Acknowledged
+*r CallHistoryGetResult Entry 7 RoomAnalytics PeopleCount: "0"
+*r CallHistoryGetResult Entry 8 CallHistoryId: 3
+*r CallHistoryGetResult Entry 8 CallId: 4
+*r CallHistoryGetResult Entry 8 RemoteNumber: "sip:george.swiney@vtc.ironbow.com"
+*r CallHistoryGetResult Entry 8 CallbackNumber: "sip:george.swiney@vtc.ironbow.com"
+*r CallHistoryGetResult Entry 8 DisplayName: "george.swiney@vtc.ironbow.com"
+*r CallHistoryGetResult Entry 8 Direction: Incoming
+*r CallHistoryGetResult Entry 8 Protocol: Sip
+*r CallHistoryGetResult Entry 8 CallRate: 4096
+*r CallHistoryGetResult Entry 8 CallType: Video
+*r CallHistoryGetResult Entry 8 VideoUsed: True
+*r CallHistoryGetResult Entry 8 EncryptionType: "AES-128"
+*r CallHistoryGetResult Entry 8 BookingId: ""
+*r CallHistoryGetResult Entry 8 Duration: 17
+*r CallHistoryGetResult Entry 8 StartTime: "2021-12-02T15:09:45"
+*r CallHistoryGetResult Entry 8 StartTimeUTC: "2021-12-02T20:09:45Z"
+*r CallHistoryGetResult Entry 8 EndTime: "2021-12-02T15:10:02"
+*r CallHistoryGetResult Entry 8 EndTimeUTC: "2021-12-02T20:10:02Z"
+*r CallHistoryGetResult Entry 8 DaysAgo: 7
+*r CallHistoryGetResult Entry 8 DisconnectCause: ""
+*r CallHistoryGetResult Entry 8 DisconnectCauseCode: 0
+*r CallHistoryGetResult Entry 8 DisconnectCauseOrigin: Internal
+*r CallHistoryGetResult Entry 8 DisconnectCauseType: LocalDisconnect
+*r CallHistoryGetResult Entry 8 Video Incoming PacketLoss: "1/750"
+*r CallHistoryGetResult Entry 8 Video Incoming PacketLossPercent: 0
+*r CallHistoryGetResult Entry 8 Video Incoming MaxJitter: 24
+*r CallHistoryGetResult Entry 8 Video Outgoing PacketLoss: "0/1203"
+*r CallHistoryGetResult Entry 8 Video Outgoing PacketLossPercent: 0
+*r CallHistoryGetResult Entry 8 Video Outgoing MaxJitter: 6
+*r CallHistoryGetResult Entry 8 Audio Incoming PacketLoss: "1/457"
+*r CallHistoryGetResult Entry 8 Audio Incoming PacketLossPercent: 0
+*r CallHistoryGetResult Entry 8 Audio Incoming MaxJitter: 580
+*r CallHistoryGetResult Entry 8 Audio Outgoing PacketLoss: "0/572"
+*r CallHistoryGetResult Entry 8 Audio Outgoing PacketLossPercent: 0
+*r CallHistoryGetResult Entry 8 Audio Outgoing MaxJitter: 3
+*r CallHistoryGetResult Entry 8 OccurrenceType: Received
+*r CallHistoryGetResult Entry 8 IsAcknowledged: Acknowledged
+*r CallHistoryGetResult Entry 8 RoomAnalytics PeopleCount: "0"
+*r CallHistoryGetResult Entry 9 CallHistoryId: 2
+*r CallHistoryGetResult Entry 9 CallId: 3
+*r CallHistoryGetResult Entry 9 RemoteNumber: "sip:george.swiney@vtc.ironbow.com"
+*r CallHistoryGetResult Entry 9 CallbackNumber: "sip:george.swiney@vtc.ironbow.com"
+*r CallHistoryGetResult Entry 9 DisplayName: "george.swiney@vtc.ironbow.com"
+*r CallHistoryGetResult Entry 9 Direction: Incoming
+*r CallHistoryGetResult Entry 9 Protocol: Sip
+*r CallHistoryGetResult Entry 9 CallRate: 4096
+*r CallHistoryGetResult Entry 9 CallType: Video
+*r CallHistoryGetResult Entry 9 VideoUsed: True
+*r CallHistoryGetResult Entry 9 EncryptionType: "AES-128"
+*r CallHistoryGetResult Entry 9 BookingId: ""
+*r CallHistoryGetResult Entry 9 Duration: 7
+*r CallHistoryGetResult Entry 9 StartTime: "2021-12-02T15:00:50"
+*r CallHistoryGetResult Entry 9 StartTimeUTC: "2021-12-02T20:00:50Z"
+*r CallHistoryGetResult Entry 9 EndTime: "2021-12-02T15:00:57"
+*r CallHistoryGetResult Entry 9 EndTimeUTC: "2021-12-02T20:00:57Z"
+*r CallHistoryGetResult Entry 9 DaysAgo: 7
+*r CallHistoryGetResult Entry 9 DisconnectCause: ""
+*r CallHistoryGetResult Entry 9 DisconnectCauseCode: 0
+*r CallHistoryGetResult Entry 9 DisconnectCauseOrigin: Internal
+*r CallHistoryGetResult Entry 9 DisconnectCauseType: LocalDisconnect
+*r CallHistoryGetResult Entry 9 Video Incoming PacketLoss: "1/264"
+*r CallHistoryGetResult Entry 9 Video Incoming PacketLossPercent: 0
+*r CallHistoryGetResult Entry 9 Video Incoming MaxJitter: 23
+*r CallHistoryGetResult Entry 9 Video Outgoing PacketLoss: "0/576"
+*r CallHistoryGetResult Entry 9 Video Outgoing PacketLossPercent: 0
+*r CallHistoryGetResult Entry 9 Video Outgoing MaxJitter: 8
+*r CallHistoryGetResult Entry 9 Audio Incoming PacketLoss: "1/187"
+*r CallHistoryGetResult Entry 9 Audio Incoming PacketLossPercent: 1
+*r CallHistoryGetResult Entry 9 Audio Incoming MaxJitter: 62
+*r CallHistoryGetResult Entry 9 Audio Outgoing PacketLoss: "0/209"
+*r CallHistoryGetResult Entry 9 Audio Outgoing PacketLossPercent: 0
+*r CallHistoryGetResult Entry 9 Audio Outgoing MaxJitter: 2
+*r CallHistoryGetResult Entry 9 OccurrenceType: Received
+*r CallHistoryGetResult Entry 9 IsAcknowledged: Acknowledged
+*r CallHistoryGetResult Entry 9 RoomAnalytics PeopleCount: "1"
+*r CallHistoryGetResult Entry 10 CallHistoryId: 1
+*r CallHistoryGetResult Entry 10 CallId: 2
+*r CallHistoryGetResult Entry 10 RemoteNumber: "sip:george.swiney@vtc.ironbow.com"
+*r CallHistoryGetResult Entry 10 CallbackNumber: "sip:george.swiney@vtc.ironbow.com"
+*r CallHistoryGetResult Entry 10 DisplayName: "george.swiney@vtc.ironbow.com"
+*r CallHistoryGetResult Entry 10 Direction: Incoming
+*r CallHistoryGetResult Entry 10 Protocol: Sip
+*r CallHistoryGetResult Entry 10 CallRate: 4096
+*r CallHistoryGetResult Entry 10 CallType: Video
+*r CallHistoryGetResult Entry 10 VideoUsed: True
+*r CallHistoryGetResult Entry 10 EncryptionType: "AES-128"
+*r CallHistoryGetResult Entry 10 BookingId: ""
+*r CallHistoryGetResult Entry 10 Duration: 35
+*r CallHistoryGetResult Entry 10 StartTime: "2021-12-02T14:59:03"
+*r CallHistoryGetResult Entry 10 StartTimeUTC: "2021-12-02T19:59:03Z"
+*r CallHistoryGetResult Entry 10 EndTime: "2021-12-02T14:59:38"
+*r CallHistoryGetResult Entry 10 EndTimeUTC: "2021-12-02T19:59:38Z"
+*r CallHistoryGetResult Entry 10 DaysAgo: 8
+*r CallHistoryGetResult Entry 10 DisconnectCause: "Normal"
+*r CallHistoryGetResult Entry 10 DisconnectCauseCode: 0
+*r CallHistoryGetResult Entry 10 DisconnectCauseOrigin: SIP
+*r CallHistoryGetResult Entry 10 DisconnectCauseType: RemoteDisconnect
+*r CallHistoryGetResult Entry 10 Video Incoming PacketLoss: "11/2923"
+*r CallHistoryGetResult Entry 10 Video Incoming PacketLossPercent: 0
+*r CallHistoryGetResult Entry 10 Video Incoming MaxJitter: 67
+*r CallHistoryGetResult Entry 10 Video Outgoing PacketLoss: "0/3855"
+*r CallHistoryGetResult Entry 10 Video Outgoing PacketLossPercent: 0
+*r CallHistoryGetResult Entry 10 Video Outgoing MaxJitter: 7
+*r CallHistoryGetResult Entry 10 Audio Incoming PacketLoss: "4/1624"
+*r CallHistoryGetResult Entry 10 Audio Incoming PacketLossPercent: 0
+*r CallHistoryGetResult Entry 10 Audio Incoming MaxJitter: 62
+*r CallHistoryGetResult Entry 10 Audio Outgoing PacketLoss: "0/1688"
+*r CallHistoryGetResult Entry 10 Audio Outgoing PacketLossPercent: 0
+*r CallHistoryGetResult Entry 10 Audio Outgoing MaxJitter: 4
+*r CallHistoryGetResult Entry 10 OccurrenceType: Received
+*r CallHistoryGetResult Entry 10 IsAcknowledged: Acknowledged
+*r CallHistoryGetResult Entry 10 RoomAnalytics PeopleCount: "0"
+*r CallHistoryGetResult ResultInfo Offset: 0
+*r CallHistoryGetResult ResultInfo Limit: 65534

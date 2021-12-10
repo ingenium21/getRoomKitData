@@ -79,8 +79,8 @@ def compare_callHistory_Ids(mydict):
         with open(jsonFileName, 'r') as j:
             callHistory = json.loads(j.read())
             j.close()
-        if mydict[' CallId'] > callHistory[' CallId']:
-            mydict = {' CallId' : mydict[' CallId']}
+        if mydict['CallHistoryId'] > callHistory['CallHistoryId']:
+            mydict = {'CallHistoryId' : mydict['CallHistoryId']}
             with open(jsonFileName, 'w') as jn:
                 json.dump(mydict, jn)
                 jn.close()
@@ -97,18 +97,30 @@ def get_call_history(session):
     command = "xcommand CallHistory Get DetailLevel: full\r"
     commandTrimmed = "callHistory"
     data = send_command(session, command)
-    callsArray = re.split("\*r CallHistoryGetResult Entry \d CallHistoryId: \d+", data)
+    # with open('./callHistory.txt', 'r') as ch:
+    #     data = ch.read()
+    callsArray = re.split("(\*r CallHistoryGetResult Entry \d+ CallHistoryId: \d+)", data)
     callsArray.pop(0)
+    callsArray = join_array_elements(callsArray)
+
     for call in reversed(callsArray):
-        mydict = data_to_dict(call, pattern="*r ", filterPattern="(.*?Entry \d)")
+        mydict = data_to_dict(call, pattern="*r ", filterPattern="(.*?Entry \d+\s)")
         cmp = compare_callHistory_Ids(mydict)
         if (cmp):
             dict_to_json(mydict, commandTrimmed)
 
+def join_array_elements(arr):
+    newArr = []
+    while(len(arr) > 0):
+        newArr += [arr[0] + arr[1]]
+        arr.pop(0)
+        arr.pop(0)
+    return newArr
+
 def main():
     device = os.getenv("DEVICE")
-    session = start_connect()
-    get_call_history(session)
+    # session = start_connect()
+    get_call_history(session="")
 
 
 if __name__ == "__main__":
