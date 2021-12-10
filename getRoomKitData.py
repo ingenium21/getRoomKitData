@@ -1,3 +1,4 @@
+#! /usr/bin/python
 import json
 import os
 import paramiko
@@ -24,7 +25,7 @@ def send_command(ssh, command = "xstatus\r"):
     channel.send(command)
     while not channel.recv_ready():
         time.sleep(3)
-    out = channel.recv(9999)
+    out = channel.recv(999999)
     string = out.decode('ascii')
     channel.close()
     return string
@@ -58,7 +59,7 @@ def dict_to_json(myDict, command):
     filename = f"{filepath}{filename}"
     if os.path.exists(filename):
         with open(filename, 'rb+') as fp:
-            fp.seek(-3, os.SEEK_END)
+            fp.seek(-2, os.SEEK_END)
             fp.truncate()
         with open(filename, 'a', encoding='utf-8') as fp:
             fp.write(',\n')
@@ -102,7 +103,6 @@ def get_call_history(session):
     callsArray = re.split("(\*r CallHistoryGetResult Entry \d+ CallHistoryId: \d+)", data)
     callsArray.pop(0)
     callsArray = join_array_elements(callsArray)
-
     for call in reversed(callsArray):
         mydict = data_to_dict(call, pattern="*r ", filterPattern="(.*?Entry \d+\s)")
         cmp = compare_callHistory_Ids(mydict)
@@ -119,8 +119,8 @@ def join_array_elements(arr):
 
 def main():
     device = os.getenv("DEVICE")
-    # session = start_connect()
-    get_call_history(session="")
+    session = start_connect()
+    get_call_history(session)
 
 
 if __name__ == "__main__":
