@@ -25,7 +25,7 @@ def send_command(ssh, command = "xstatus\r"):
     channel.send(command)
     while not channel.recv_ready():
         time.sleep(3)
-    out = channel.recv(999999)
+    out = channel.recv(9999999999)
     string = out.decode('ascii')
     channel.close()
     return string
@@ -80,7 +80,7 @@ def compare_callHistory_Ids(mydict):
         with open(jsonFileName, 'r') as j:
             callHistory = json.loads(j.read())
             j.close()
-        if mydict['CallHistoryId'] > callHistory['CallHistoryId']:
+        if (int(mydict['CallHistoryId']) > int(callHistory['CallHistoryId'])):
             mydict = {'CallHistoryId' : mydict['CallHistoryId']}
             with open(jsonFileName, 'w') as jn:
                 json.dump(mydict, jn)
