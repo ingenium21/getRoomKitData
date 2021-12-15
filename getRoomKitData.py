@@ -3,6 +3,7 @@ import json
 import os
 import paramiko
 import time
+import asyncio
 from pprint import pprint
 import re
 from dotenv import load_dotenv
@@ -117,15 +118,12 @@ def join_array_elements(arr):
         arr.pop(0)
     return newArr
 
-def main():
-    
-    for i in range(3):
-        device = os.getenv("DEVICE")
+async def main():
+    while True:
         session = start_connect()
         print(f"running at {time.localtime}")
         get_call_history(session)
-        time.sleep(15)
-    session_close(session)
+        await asyncio.sleep(15)
     
 
 
