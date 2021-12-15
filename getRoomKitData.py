@@ -59,18 +59,13 @@ def dict_to_json(myDict, command):
         os.mkdir(filepath)
     filename = f"{filepath}{filename}"
     if os.path.exists(filename):
-        with open(filename, 'rb+') as fp:
-            fp.seek(-2, os.SEEK_END)
-            fp.truncate()
         with open(filename, 'a', encoding='utf-8') as fp:
-            fp.write(',\n')
             json.dump(myDict, fp)
-            fp.write('\n]')
+            fp.write('\n')
     else:
         with open(filename, 'a', encoding='utf-8') as fp:
-            fp.write('[')
             json.dump(myDict, fp)
-            fp.write('\n]')
+            fp.write('\n')
 
 def session_close(ssh):
     ssh.close()
@@ -119,11 +114,10 @@ def join_array_elements(arr):
     return newArr
 
 async def main():
-
-    session = start_connect()
-    print(f"running at {time.localtime}")
-    get_call_history(session)
-    await asyncio.sleep(15)
+    while True:
+        session = start_connect()
+        get_call_history(session)
+        await asyncio.sleep(15)
     
 
 
