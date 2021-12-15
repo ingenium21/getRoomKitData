@@ -58,18 +58,13 @@ def dict_to_json(myDict, command):
         os.mkdir(filepath)
     filename = f"{filepath}{filename}"
     if os.path.exists(filename):
-        with open(filename, 'rb+') as fp:
-            fp.seek(-2, os.SEEK_END)
-            fp.truncate()
         with open(filename, 'a', encoding='utf-8') as fp:
-            fp.write(',\n')
             json.dump(myDict, fp)
-            fp.write('\n]')
+            fp.write('\n')
     else:
         with open(filename, 'a', encoding='utf-8') as fp:
-            fp.write('[')
             json.dump(myDict, fp)
-            fp.write('\n]')
+            fp.write('\n')
 
 def session_close(ssh):
     ssh.close()
