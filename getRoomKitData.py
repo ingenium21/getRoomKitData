@@ -119,13 +119,13 @@ def join_array_elements(arr):
     return newArr
 
 async def main():
-    while True:
-        session = start_connect()
-        print(f"running at {time.localtime}")
-        get_call_history(session)
-        await asyncio.sleep(15)
+
+    session = start_connect()
+    print(f"running at {time.localtime}")
+    get_call_history(session)
+    await asyncio.sleep(15)
     
 
 
 if __name__ == "__main__":
-    main()
+    asyncio.run(main())
